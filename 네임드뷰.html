@@ -15,7 +15,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
     <script>
-        var 
+        var Body = {template : '<div>This is body</div>'}; 
+        var Header = {template : '<div>This is Header</div>'}; 
+        var Footer = {template : '<div>This is Footer</div>'}; 
+
+        var router = new VueRouter({
+            routes: [
+                {
+                path : '/',
+                components : {
+                    default : Body, 
+                    header : Header, 
+                    footer : Footer
+                }
+                }
+            ]
+        });
     
     
     </script>
